@@ -64,3 +64,5 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+# Online-University-Student-Clearance-System
+A web-based online platform system streamlining the student clearance completion using laravel framework.
