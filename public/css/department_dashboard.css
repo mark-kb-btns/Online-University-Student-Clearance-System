@@ -1,0 +1,88 @@
+header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px;
+    background-color: rgba(245, 245, 245, 0.979); 
+}
+
+body {
+    background-color: #fdfdfd; 
+}
+
+.label {
+    display: flex;
+    align-items: center; /* Vertically centers the text */
+    justify-content: flex-start; /* Aligns the label content to the left */
+    width: 100%; /* Takes up full width */
+    max-width: 429px; /* Define width for logo */
+    height: 60px;
+    margin-right: auto; /* Ensures the logo stays on the left */
+  }
+  
+  .label .OCS-online-clearance {
+    text-shadow: 0px 4px 4px #00000040;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 400;
+    color: #53279f;
+    font-size: 50px;
+    text-align: center;
+  }
+  
+  .label .text-wrapper {
+    font-weight: 700;
+    letter-spacing: -1.56px;
+  }
+  
+  .label .span {
+    font-family: "Roboto-Regular", Helvetica;
+    font-size: 17px;
+    letter-spacing: 0;
+  }
+  
+
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+    color: #1d1b20;
+}
+
+.card {
+    border-radius: 15px; /* Rounded corners for the cards */
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition for hover effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+.card:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+.card-title {
+    font-size: 18px; /* Larger font size for the card titles */
+    margin-bottom: 5px; /* Space below the title */
+}
+.card-text {
+    font-size: 14px; /* Larger font size for the card text */
+}
+.icon {
+    font-size: 30px; /* Size of the icons */
+    margin-right: 1rem; /* Space between the icon and text */
+}
+.container {
+    max-width: 1400px; /* Limit container width */
+}
