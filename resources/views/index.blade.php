@@ -60,21 +60,55 @@
 
 
                     <div class="list-item-list-item-2">
-                            <div class="leading-element"><img class="person" src="img/setting.png" />Log in as Clearance Admin</div>
+                            <div class="leading-element"><img class="person" src="img/setting.png" />
+                            <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#clearanceAdminLoginModal">
+                        Log in as Clearance Admin
+                            </button>
+                        </div>
                     </div>
+
+<!-- Clerance Admin Login Modal -->
+<div class="modal fade" id="clearanceAdminLoginModal" tabindex="-1" aria-labelledby="clearanceAdminLoginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="clearanceAdminLoginModalLabel">Clearance Admin Login</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="{{ route('clearanceadmin.login') }}" method="POST">
+                    @csrf <!-- Laravel CSRF protection -->
+                    <div class="mb-3">
+                        <label for="clearanceAdminEmail" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="clearanceAdminEmail" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="clearanceAdminPassword" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="clearanceAdminPassword" name="password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
                     <div class="list-item-list-item-3">
                             <div class="leading-element"><img class="person" src="img/staff.png" />Log in as Registrar Staff</div>
                     </div>
 
 
-                    <div class="list-item-list-item-4">
-    <div class="leading-element">
-        <img class="person" src="img/school.png" />
-        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#departmentLoginModal">
-            Log in as Departmental Staff
-        </button>
-    </div>
-</div>
+        <div class="list-item-list-item-4">
+            <div class="leading-element">
+                <img class="person" src="img/school.png" />
+                <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#departmentLoginModal">
+                    Log in as Departmental Staff
+                </button>
+            </div>
+        </div>
 
 <!-- Departmental Login Modal -->
 <div class="modal fade" id="departmentLoginModal" tabindex="-1" aria-labelledby="departmentLoginModalLabel" aria-hidden="true">

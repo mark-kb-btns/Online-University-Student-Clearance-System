@@ -61,6 +61,7 @@ nav ul li a {
 a{
     text-decoration: none;
     color: #1d1b20;
+    font-family: "Helvetica Neue", serif;
 }
 
 
@@ -73,13 +74,16 @@ a{
     margin-top: 30px;
     position: relative;
     margin-left: 50px;
+    font-family: "Helvetica Neue", serif;
+    font-size: 16px;
 }
 
 .label2 {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 15px; 
     color: #1d1b20;
+    font-family: "Helvetica Neue", serif;
 }
 
 .inner-box {
@@ -160,6 +164,7 @@ a{
     display: flex; /* Enable flexbox layout */
     flex-direction: column; /* Stack children vertically */
     justify-content: flex-end; /* Align children to the bottom */
+    
 }
 
 .about-box h1, .about-box h2, .about-box p {
@@ -183,8 +188,8 @@ a{
 }
 
 .about-box p {
-    font-size: 12px; /* Body text styling */
-    font-family: monospace;
+    font-size: 16px; /* Body text styling */
+    font-family: "Helvetica Neue", serif;
 }
 
 
@@ -223,8 +228,8 @@ a{
 }
 
 .reminder-item {
-    font-size: 12px;
-    font-family: monospace;
+    font-size: 16px;
+    font-family: "Helvetica Neue", serif;
     color: #1d1b20;
     margin: 3px 0; /* Adds space between each reminder */
 }

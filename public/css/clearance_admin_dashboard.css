@@ -1,0 +1,170 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(245, 245, 245, 0.979);
+    position: fixed; /* Keeps the header fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures the header stays above other elements */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    background-color: #fdfdfd; 
+   margin: 0;
+   color: #1d1d1d;
+}
+
+.label {
+    display: flex;
+    align-items: center; /* Vertically centers the text */
+    justify-content: flex-start; /* Aligns the label content to the left */
+    width: 100%; /* Takes up full width */
+    max-width: 429px; /* Define width for logo */
+    height: 60px;
+    margin-right: auto; /* Ensures the logo stays on the left */
+  }
+  
+  .label .OCS-online-clearance {
+    text-shadow: 0px 4px 4px #00000040;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 400;
+    color: #53279f;
+    font-size: 50px;
+    text-align: center;
+  }
+  
+  .label .text-wrapper {
+    font-weight: 700;
+    letter-spacing: -1.56px;
+  }
+  
+  .label .span {
+    font-family: "Roboto-Regular", Helvetica;
+    font-size: 17px;
+    letter-spacing: 0;
+  }
+  
+
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+    color: #1d1b20;
+}
+
+
+
+
+
+.footer {
+    display: fixed;
+    bottom: 0;
+    margin-top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: #90b6dd;
+background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    color: white;
+    padding: 20px 0;
+    z-index: 11;
+    height: auto;
+}
+
+
+
+.ab-footer {
+    font-size: 12px;
+    font-family: PP;
+    color: white;
+    padding-left: 50px;
+}
+
+.card {
+    border-radius: 15px; /* Rounded corners for the cards */
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition for hover effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    width: 300px;
+}
+.card:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+.card-title {
+    font-size: 18px; /* Larger font size for the card titles */
+    margin-bottom: 5px; /* Space below the title */
+    color: #fdfdfd;
+}
+.card-text {
+    font-size: 14px; /* Larger font size for the card text */
+    color: #fdfdfd;
+}
+.icon {
+    font-size: 30px; /* Size of the icons */
+    margin-right: 1rem; /* Space between the icon and text */
+}
+.container, .content {
+    max-width: 80%; /* Limit container width */
+    margin-left: 150px; /* Space for the sidebar */
+    padding: 20px;
+    box-sizing: border-box; /* Ensures padding does not overflow the content width */
+}
+
+.content {
+    margin-top: 90px; /* Space for the fixed header */
+    color: #fdfdfd;
+}
+
+
+.sidebar {
+    position: fixed; 
+    top: 80px; 
+    left: 0;
+    width: auto;
+    height: calc(100% - 60px); 
+    background-color: #ffffff;
+    overflow-y: auto; 
+    border-right: 1px solid #c8c7ca;
+    padding-top: 150px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+a {
+    text-decoration: none;
+    color: #1d1b20;
+}
+
+
+.dashboard_sel, .managestudents_sel, .trackactivity_sel, .settings{
+    background-repeat: no-repeat;
+    background-position: center;
+    width: auto;
+    height: 24px;
+    display: block; 
+    padding: 20px;
+    margin: 10px;
+}
+
+
+
+
+
+  

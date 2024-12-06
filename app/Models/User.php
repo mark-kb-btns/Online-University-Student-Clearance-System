@@ -27,6 +27,7 @@ class User extends Authenticatable
         'program_id',
         'department_id',
         'student_status',
+        'year_level',
         'user_role',
     ];
 
@@ -61,4 +62,6 @@ class User extends Authenticatable
     {
         return $this->belongsTo(Programs::class, 'program_id', 'program_id');
     }
+
+    
 }

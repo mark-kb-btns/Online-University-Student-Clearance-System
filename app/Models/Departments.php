@@ -14,4 +14,10 @@ class departments extends Model
         'department_id',
         'department_name',
     ];
+
+    public function student_users()
+        {
+            return $this->hasMany(User::class, 'department_id', 'department_id');
+        }
+
 }

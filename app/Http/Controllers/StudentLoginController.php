@@ -24,10 +24,8 @@ class StudentLoginController extends Controller
     // Check if the user exists and the password matches
     if ($user && Hash::check($request->password, $user->user_password)) {
         Auth::login($user); // Log the user in
-        \Log::info('User logged in: ' . $request->email);
         return redirect()->intended('/student_dashboard');
     } else {
-        \Log::info('Failed login attempt: ' . $request->email);
         return back()->withErrors(['email' => 'Invalid credentials, please try again.']);
     }
 }

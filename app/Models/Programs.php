@@ -14,4 +14,10 @@ class Programs extends Model
         'program_id',
         'program_name',
     ];
+
+    public function student_users()
+        {
+            return $this->hasMany(User::class, 'program_id', 'program_id');
+        }
+
 }
